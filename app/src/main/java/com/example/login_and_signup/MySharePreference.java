@@ -11,8 +11,15 @@ public class MySharePreference {
         this.context = context;
     }
 
-    public void putBoolenValues(boolean value ){
+    public void putStringValues(String key, String value ){
         SharedPreferences sharePreference = context.getSharedPreferences(My_SharePreference,Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharePreference.edit();
+        editor.putString(key,value);
+        editor.apply();
+    }
+
+    public String getStringValues( String key){
+        SharedPreferences sharedPref = context.getSharedPreferences(My_SharePreference,Context.MODE_PRIVATE);
+        return sharedPref.getString(key,"@#");
     }
 }
