@@ -2,5 +2,12 @@
 <resources>
     <dimen name="dp90">90dp</dimen>
     <dimen name="dp20">20dp</dimen>
+    <dimen name="dp50">50dp</dimen>
+    <dimen name="dp30">30dp</dimen>
+    <dimen name="dp300">300dp</dimen>
+    <dimen name="dp270">270dp</dimen>
+    <dimen name="dp5">5dp</dimen>
+    <dimen name="dp10">10dp</dimen>
+    <dimen name="dp150">150dp</dimen>
 
 </resources>

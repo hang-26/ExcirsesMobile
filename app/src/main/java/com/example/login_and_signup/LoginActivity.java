@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.mobile_activity.MainActivity;
 import com.example.mobile_activity.R;
 
 public class LoginActivity extends AppCompatActivity {
@@ -49,6 +50,8 @@ public class LoginActivity extends AppCompatActivity {
                 else {
                     Toast.makeText(LoginActivity.this, "UserName or Pass incorrect", Toast.LENGTH_SHORT).show();
                 }
+                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(intent);
             }
         });
 

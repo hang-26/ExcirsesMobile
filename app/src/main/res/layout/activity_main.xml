@@ -1,18 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/linear_paste"
+        android:background="@color/color_tool_paste"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50">
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_g"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="@dimen/dp270"
+            android:src="@drawable/ic_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vw_main"
+        android:layout_below="@id/linear_paste"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.viewpager2.widget.ViewPager2>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50">
+        <LinearLayout
+            android:id="@+id/linear_home_tab"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp50">
+            <ImageView
+                android:id="@+id/imv_home"
+                android:src="@drawable/home_click"
+                android:layout_width="@dimen/dp30"
+                android:layout_height="@dimen/dp30"/>
+            <TextView
+                android:id="@+id/tv_home"
+                android:textColor="@color/color_tool_paste"
+                android:text="Trang chủ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_folder_tap"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp50">
+            <ImageView
+                android:id="@+id/imv_folder"
+                android:src="@drawable/ic_folder"
+                android:layout_width="@dimen/dp30"
+                android:layout_height="@dimen/dp30"/>
+            <TextView
+                android:id="@+id/tv_folder"
+                android:text="Danh mục"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear_map"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp50">
+            <ImageView
+                android:id="@+id/imv_map"
+                android:src="@drawable/ic_map"
+                android:layout_width="@dimen/dp30"
+                android:layout_height="@dimen/dp30"/>
+            <TextView
+                android:id="@+id/tv_map"
+                android:text="Bản đồ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
