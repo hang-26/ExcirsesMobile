@@ -5,9 +5,12 @@
     tools:context="com.example.login_and_signup.fragment.FolderFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/home_viewpager"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp50"
+        android:id="@+id/folder_recyclerview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="9999999" />
+        android:layout_height="wrap_content"/>
 
 </FrameLayout>
