@@ -1,5 +1,6 @@
 package com.example.login_and_signup.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -13,6 +14,7 @@ import androidx.room.Room;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.example.mobile_activity.R;
 import com.example.recycleview.AdapterProduct;
@@ -28,9 +30,11 @@ import java.util.List;
 public class HomeFragment extends Fragment {
 
     RecyclerView home_recyclerview;
+    ImageView imv_product;
     AdapterProduct adapterProduct;
     ProductDatabase productDatabase;
     List<Product> productList ;
+    ProductDao productDao;
     public HomeFragment() {
         // Required empty public constructor
     }
@@ -47,13 +51,14 @@ public class HomeFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         initView(view);
         productDatabase = Room.databaseBuilder(getContext(),ProductDatabase.class,"data product").allowMainThreadQueries().build();
-        ProductDao productDao = productDatabase.productDao();
+        productDao = productDatabase.productDao();
         productList = productDao.getAll();
         setProduct();
     }
 
     private void initView(View view){
         home_recyclerview = view.findViewById(R.id.home_recyclerview);
+        imv_product = view.findViewById(R.id.imv_product);
     }
 
     public void setProduct(){
@@ -62,4 +67,5 @@ public class HomeFragment extends Fragment {
         home_recyclerview.setAdapter(adapterProduct);
         home_recyclerview.setLayoutManager(linearLayoutManager);
     }
+
 }

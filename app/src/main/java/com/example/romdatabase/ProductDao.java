@@ -11,8 +11,9 @@ import java.util.List;
 public interface ProductDao {
     @Query("SELECT * FROM product")
     List<Product> getAll();
-    @Query("SELECT * FROM product WHERE uid IN (:userIds)")
-    List<Product> loadAllByIds(int[] userIds);
+
+    @Query("SELECT * FROM product WHERE uid=:id ")
+    Product loadSingle(int id);
 
     @Insert
     void insertAll(Product... products);

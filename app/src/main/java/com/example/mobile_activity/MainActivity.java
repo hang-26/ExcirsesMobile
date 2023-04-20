@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment;
 import androidx.room.Room;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -19,6 +20,7 @@ import com.example.login_and_signup.fragment.MapFragment;
 import com.example.romdatabase.Product;
 import com.example.romdatabase.ProductDao;
 import com.example.romdatabase.ProductDatabase;
+import com.example.store.StoreActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView imv_home;
     ImageView imv_folder;
     ImageView imv_map;
+    ImageView ic_imvStore;
     List<Fragment> fragmentList = new ArrayList<>();
     ProductDatabase productDatabase;
     @Override
@@ -69,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
         imv_home =findViewById(R.id.imv_home);
         imv_folder = findViewById(R.id.imv_folder);
         imv_map = findViewById(R.id.imv_map);
+        ic_imvStore = findViewById(R.id.ic_imvStore);
     }
 
     private void addListener(){
@@ -109,6 +113,14 @@ public class MainActivity extends AppCompatActivity {
                 tv_home.setTextColor(Color.parseColor("#FF000000"));
                 tv_folder.setTextColor(Color.parseColor("#FF000000"));
 
+            }
+        });
+
+        ic_imvStore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, StoreActivity.class);
+                startActivity(intent);
             }
         });
     }
