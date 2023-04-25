@@ -15,6 +15,7 @@ import com.example.detail.DetailProduct;
 import com.example.login_and_signup.fragment.FolderFragment;
 import com.example.mobile_activity.R;
 import com.example.romdatabase.Product;
+import com.example.store.StoreActivity;
 
 import java.util.List;
 
@@ -50,6 +51,17 @@ public class AdapterProduct extends  RecyclerView.Adapter<RecyclerView.ViewHolde
                     Intent myIntent = new Intent(viewHolderHome.viewP.getContext(), DetailProduct.class);
                     myIntent.putExtra("uid",idValue);
                     viewHolderHome.viewP.getContext().startActivity(myIntent);
+                }
+            });
+            //set onclick for button buy
+            viewHolderHome.btn_buy.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    int idValue;
+                    idValue = listP.uid;
+                    Intent sIntent = new Intent(viewHolderHome.viewP.getContext(), StoreActivity.class);
+                    sIntent.putExtra("name uid",idValue);
+                    viewHolderHome.viewP.getContext().startActivity(sIntent);
                 }
             });
         }

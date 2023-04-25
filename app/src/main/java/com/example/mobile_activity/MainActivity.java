@@ -123,6 +123,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        ic_imvStore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(MainActivity.this, StoreActivity.class);
+                startActivity(myIntent);
+            }
+        });
+
     }
 
 

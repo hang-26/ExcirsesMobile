@@ -15,6 +15,13 @@
         android:theme="@style/Theme.Mobile_Activity"
         tools:targetApi="31">
         <activity
+            android:name="com.example.store.StoreActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name="com.example.detail.DetailProduct"
             android:exported="false">
             <meta-data
