@@ -19,7 +19,7 @@ public class ViewHolderHome extends RecyclerView.ViewHolder {
         nameP=itemView.findViewById(R.id.tv_name_product);
         priceP = itemView.findViewById(R.id.tv_price);
         viewP = itemView.findViewById(R.id.imv_product);
-        btn_buy = itemView.findViewById(R.id.btn_buy);
+        //btn_buy = itemView.findViewById(R.id.btn_buy);
     }
 
 }

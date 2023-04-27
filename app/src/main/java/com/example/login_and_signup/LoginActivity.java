@@ -46,12 +46,13 @@ public class LoginActivity extends AppCompatActivity {
                 String pass = mySharePreference.getStringValues(uName);
                 if(passNew.equals(pass)){
                     Toast.makeText(LoginActivity.this,"Login Success",Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                    startActivity(intent);
                 }
                 else {
                     Toast.makeText(LoginActivity.this, "UserName or Pass incorrect", Toast.LENGTH_SHORT).show();
                 }
-                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                startActivity(intent);
+
             }
         });
 

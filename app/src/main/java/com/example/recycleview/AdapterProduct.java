@@ -43,6 +43,7 @@ public class AdapterProduct extends  RecyclerView.Adapter<RecyclerView.ViewHolde
             //set image
            // Glide.with(listP.viewP.getContext()).load(unEscapeLink).into(listP.viewP);
             Glide.with(viewHolderHome.viewP.getContext()).load(listP.ui_image).into(viewHolderHome.viewP);
+
             viewHolderHome.viewP.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -51,17 +52,6 @@ public class AdapterProduct extends  RecyclerView.Adapter<RecyclerView.ViewHolde
                     Intent myIntent = new Intent(viewHolderHome.viewP.getContext(), DetailProduct.class);
                     myIntent.putExtra("uid",idValue);
                     viewHolderHome.viewP.getContext().startActivity(myIntent);
-                }
-            });
-            //set onclick for button buy
-            viewHolderHome.btn_buy.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    int idValue;
-                    idValue = listP.uid;
-                    Intent sIntent = new Intent(viewHolderHome.viewP.getContext(), StoreActivity.class);
-                    sIntent.putExtra("name uid",idValue);
-                    viewHolderHome.viewP.getContext().startActivity(sIntent);
                 }
             });
         }

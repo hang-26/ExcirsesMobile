@@ -5,29 +5,30 @@
     android:orientation="horizontal"
     android:layout_height="wrap_content">
     <ImageView
+        android:id="@+id/imv_storeP"
         android:layout_marginStart="@dimen/dp5"
         android:layout_width="@dimen/dp80"
-        android:layout_height="@dimen/dp80"/>
+        android:layout_height="90dp"/>
     <LinearLayout
         android:layout_marginStart="@dimen/dp5"
         android:orientation="vertical"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/dp250"
         android:layout_height="wrap_content">
         <TextView
             android:id="@+id/nameP_store"
             android:textSize="@dimen/sp16"
             android:hint="name product"
-            android:layout_width="@dimen/dp270"
+            android:layout_width="@dimen/dp230"
             android:layout_height="wrap_content"/>
         <TextView
             android:hint="Price"
             android:id="@+id/priceP_store"
-            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <LinearLayout
             android:layout_marginTop="@dimen/dp5"
-            android:layout_width="@dimen/dp270"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageView
                 android:id="@+id/tv_add"
@@ -35,18 +36,26 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
             <TextView
-                android:id="@+id/tv_number"
+                android:hint="số lượng"
+                android:paddingStart="@dimen/dp10"
+                android:id="@+id/tv_numberStore"
                 android:layout_gravity="center"
                 android:layout_width="@dimen/dp80"
                 android:layout_height="wrap_content"/>
             <ImageView
                 android:id="@+id/tv_sub"
                 android:src="@drawable/minus"
-                android:layout_width="@dimen/dp20"
+                android:layout_width="@dimen/dp17"
                 android:layout_height="wrap_content"/>
         </LinearLayout>
 
     </LinearLayout>
+    <ImageView
+        android:src="@drawable/delete"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/dp5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
 
 

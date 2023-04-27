@@ -61,7 +61,7 @@
         android:padding="@dimen/dp10"
         android:textColor="@color/black"
         android:background="@color/color_tool_paste"
-        android:layout_marginTop="@dimen/dp50"
+        android:layout_marginTop="@dimen/dp250"
         android:hint="Thêm vào giỏ hàng"
         android:textStyle="bold"
         android:id="@+id/btn_priceP"

@@ -24,7 +24,7 @@
         android:id="@+id/tv_price"
         android:layout_width="@dimen/dp150"
         android:layout_height="wrap_content"/>
-    <TextView
+    <!--<TextView
         android:id="@+id/btn_buy"
         android:textStyle="bold"
         android:textColor="@color/white"
@@ -34,7 +34,7 @@
         android:layout_marginTop="@dimen/dp10"
         android:text="Thêm vào giỏ hàng"
         android:layout_width="@dimen/dp150"
-        android:layout_height="@dimen/dp30"/>
+        android:layout_height="@dimen/dp30"/>-->
 
 
 </LinearLayout>

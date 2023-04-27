@@ -16,5 +16,8 @@
     <dimen name="sp16">16sp</dimen>
     <dimen name="sp23">23sp</dimen>
     <dimen name="dp80">80dp</dimen>
+    <dimen name="dp7">7dp</dimen>
+    <dimen name="dp17">17dp</dimen>
+    <dimen name="dp230">230dp</dimen>
 
 </resources>
