@@ -79,6 +79,14 @@ public class Adapter_Store extends RecyclerView.Adapter<ViewHolderStore> {
                     }
                 }
             });
+
+            viewHolderStore.btn_delete.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    storeDao.deleteById(store.uid);
+                    notifyDataSetChanged();
+                }
+            });
         }
 
     }

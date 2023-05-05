@@ -51,6 +51,7 @@
 
     </LinearLayout>
     <ImageView
+        android:id="@+id/btn_delete"
         android:src="@drawable/delete"
         android:layout_gravity="center"
         android:layout_marginStart="@dimen/dp5"

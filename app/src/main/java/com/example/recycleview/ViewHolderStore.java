@@ -13,6 +13,7 @@ public class ViewHolderStore extends RecyclerView.ViewHolder {
     public TextView tv_numberStore;
     public ImageView tv_add;
     public ImageView tv_sub;
+    public ImageView btn_delete;
     public ViewHolderStore(@NonNull View itemView) {
         super(itemView);
         imv_storeP = itemView.findViewById(R.id.imv_storeP);
@@ -21,5 +22,6 @@ public class ViewHolderStore extends RecyclerView.ViewHolder {
         tv_numberStore = itemView.findViewById(R.id.tv_numberStore);
         tv_add = itemView.findViewById(R.id.tv_add);
         tv_sub = itemView.findViewById(R.id.tv_sub);
+        btn_delete =itemView.findViewById(R.id.btn_delete);
     }
 }

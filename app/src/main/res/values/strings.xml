@@ -2,4 +2,6 @@
     <string name="app_name">Mobile_Activity</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="map_API_key">AIzaSyAPSKsorrwhR4Q0WcBqgdS_M1buRj4emP4</string>
 </resources>
