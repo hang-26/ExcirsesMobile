@@ -19,4 +19,7 @@ public interface StoreDao {
 
     @Insert
     void insert(Store stores);
+
+    @Query("SELECT * FROM store WHERE uid=:id ")
+    Store loadSingle(int id);
 }

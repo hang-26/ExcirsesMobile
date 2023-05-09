@@ -13,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.inventory.InventoryActivity;
 import com.example.login_and_signup.fragment.AdapterViewPager;
 import com.example.login_and_signup.fragment.FolderFragment;
 import com.example.login_and_signup.fragment.HomeFragment;
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView imv_folder;
     ImageView imv_map;
     ImageView ic_imvStore;
+    ImageView imv_icG;
     List<Fragment> fragmentList = new ArrayList<>();
     ProductDatabase productDatabase;
     @Override
@@ -73,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
         imv_folder = findViewById(R.id.imv_folder);
         imv_map = findViewById(R.id.imv_map);
         ic_imvStore = findViewById(R.id.ic_imvStore);
+        imv_icG = findViewById(R.id.imv_icG);
     }
 
     private void addListener(){
@@ -132,6 +135,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        imv_icG.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentView = new Intent(MainActivity.this, InventoryActivity.class);
+                startActivity(intentView);
+            }
+        });
     }
 
 

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="@dimen/dp10"
+    android:layout_marginStart="@dimen/dp5"
+    android:layout_marginEnd="@dimen/dp5"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imv_productInventory"
+        android:src="@drawable/new_product"
+        android:layout_width="80dp"
+        android:layout_height="80dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txt_productName"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginStart="@dimen/dp5"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp20"
+            android:hint="Tên sản phẩm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_marginStart="@dimen/dp5"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp20"
+                android:textColor="@color/black"
+                android:text="Tồn kho:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/txt_num_inventory"
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_marginStart="@dimen/dp5"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp20"
+                android:hint="Số lượng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

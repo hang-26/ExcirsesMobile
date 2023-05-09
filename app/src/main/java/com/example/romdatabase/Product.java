@@ -2,6 +2,7 @@ package com.example.romdatabase;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 import java.util.List;
 
@@ -34,4 +35,7 @@ public  class Product {
 
     @ColumnInfo(name="store")
     public String storeProduct;
+
+    @Ignore
+    public Store store;
 }
