@@ -39,6 +39,10 @@
             android:textSize="@dimen/sp20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
         <TextView
             android:id="@+id/tv_name_Folder"
             android:layout_marginTop="@dimen/dp10"
@@ -46,13 +50,28 @@
             android:textSize="@dimen/sp16"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-        <TextView
-            android:textSize="@dimen/sp16"
-            android:layout_marginTop="@dimen/dp10"
-            android:hint="Số lượng"
-            android:id="@+id/tv_numP"
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_marginStart="@dimen/dp100"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Hàng tồn:"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:textSize="@dimen/sp16"
+                android:layout_marginTop="@dimen/dp10"
+                android:hint="Số lượng"
+                android:id="@+id/tv_numP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
     <TextView
         android:textSize="@dimen/sp20"
         android:layout_gravity="center"

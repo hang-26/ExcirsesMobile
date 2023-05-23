@@ -148,8 +148,8 @@ public class MainActivity extends AppCompatActivity {
     public void ListProduct(){
         ProductDao productDao = productDatabase.productDao();
         List<Product> productList = new ArrayList<>();
-        productList.add(new Product(1,"Nước hoa hồng cân bằng da Simple",160000,"https://annguy.com/file/2022/10/new_.png",2000,"Chăm sóc da"));
-        productList.add(new Product(2,"Nước hoa hồng cân bằng da Klais",360000,"https://annguy.com/file/2022/08/new-275.png",2000,"Chăm sóc da"));
+        productList.add(new Product(1,"Nước hoa hồng cân bằng da Simple",160000,"https://product.hstatic.net/200000617989/product/new_6ffe966fb0f1422495afa66aab268c20_large.png",2000,"Chăm sóc da"));
+        productList.add(new Product(2,"Nước hoa hồng cân bằng da Klais",360000,"https://product.hstatic.net/200000617989/product/hinh_2_6c46206a40ff419c87780ceb4dfb75a6_grande.png",2000,"Chăm sóc da"));
         productList.add(new Product(3,"Nước Tẩy Trang L'Oréal Paris 3 In 1 Micellar Water Làm Tươi Mát Da 400Ml",159000,"https://product.hstatic.net/200000061028/product/thumnail_midmonth_2_64cf410e69f946b687b4055b1572a88d_grande.jpg",3000,"Trang điểm"));
         productList.add(new Product(4,"Nước Tẩy Trang Dành Cho Da Nhạy Cảm Bioderma Sensibio H2O 500Mll",429000,"https://product.hstatic.net/200000061028/product/thumnail_midmonth_3017868_12704da8c64141f1bde1d8ba1c792421_grande.jpg",3000,"Trang điểm"));
         productList.add(new Product(5,"Sữa Chống Nắng Dưỡng Da Kiềm Dầu Bảo Vệ Hoàn Hảo Anessa Perfect UV Sunscreen Skincare Milk SPF50+ PA++++ 60Ml",699000,"https://product.hstatic.net/200000061028/product/p64_thumb_3025301_c5772214757d48faad9360658118aba3_grande.jpg",3000,"Chăm sóc da"));
